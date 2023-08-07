@@ -1,0 +1,12 @@
+Crear un servidor express
+
+1) npm init -y --> crea un proyecto nodeJs -->Crea el package.json
+2) npm install express --> instala express en mi proyecto de node
+3) crear una carpeta src y dentro un archivo llamado app.js
+4) instalar nodemon npm i nodemon --> permite monitorear
+   cada cambio en app.js y actualizar los cambios automaticamente
+5) Ejecutar desde consola --> npx nodemon src/app.js
+6) Crear un script "dev" que ejecute a nodemon en package.json
+7) npm run dev --> consola.
+8) crear un protyecto git --> git init
+9) crear en la raiz de mi proyecto un archivo .gitignore
