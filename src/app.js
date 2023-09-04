@@ -20,9 +20,10 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/user', (req,res) => {
+    
     res.send({
-        status:'bad request',
-        message: 'No existe este recurso'
+        status:'OK',
+        message: users[0]
     });
 });
 
