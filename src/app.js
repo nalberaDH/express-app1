@@ -3,6 +3,10 @@ const express = require('express');
 const users = require('./database/data.json');
 const path = require('path');
 
+//variable de entorno
+// process.env.PORT --> toma el puerto del servidor de despliegue (producción "Render")
+const PORT = process.env.PORT || 3001;
+
 //crear una istancia de express
 const app = express();
 
@@ -38,6 +42,6 @@ app.get('/contacto', (req,res) => {
     res.sendFile(path.join(__dirname,'./html/contacto.html'));
 });
 //levantar el servidor
-app.listen(3001, () =>{
-    console.log('Servidor escuchando en puerto 3001');
+app.listen(PORT, () =>{
+    console.log(`Servidor escuchando en puerto ${PORT}`);
 });
